@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Manrope', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #080D16;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080D16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5B94F;
+}
+
+/* Glassmorphism & premium agency glow utilities */
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(229, 185, 79, 0.25);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 35px -5px rgba(229, 185, 79, 0.4);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FDE68A 0%, #E5B94F 50%, #B4831D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-card-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark-card-hover:hover {
+  border-color: rgba(229, 185, 79, 0.35);
+  transform: translateY(-2px);
+}
